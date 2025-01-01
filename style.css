@@ -4,22 +4,22 @@ body.main {
     color: #00008b; /* 深蓝色文字 */
 }
 
-/* 关于我页面样式 - 红黑色调 */
+/* 关于我页面样式 - 与减肥历程一致 */
 body.about {
-    background-color: #000000; /* 黑色背景 */
-    color: #f70a0a; /* 红色文字 */
-}
-
-/* 每一步都算数页面样式 - 蓝白色调 */
-body.steps {
     background-color: #f0f8ff; /* 浅蓝色背景 */
     color: #06729d; /* 天蓝色文字 */
 }
 
-/* 电子音乐页面样式 - 红黑色调 */
+/* 电子音乐页面样式 - 与减肥历程一致 */
 body.music {
-    background-color: #000000; /* 黑色背景 */
-    color: #d50808; /* 红色文字 */
+    background-color: #f0f8ff; /* 浅蓝色背景 */
+    color: #06729d; /* 天蓝色文字 */
+}
+
+/* 每一步都算数页面样式 - 与电子音乐一致 */
+body.steps {
+    background-color: #f0f8ff; /* 浅蓝色背景 */
+    color: #06729d; /* 天蓝色文字 */
 }
 
 /* 电子工程页面样式 - 蓝白色调 */
@@ -39,22 +39,105 @@ nav ul {
     padding: 0;
 }
 
+/* 新导航栏样式 */
+nav {
+    position: relative;
+    padding-left: 140px; /* 增加左边距 */
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background: black url('fanter-logo.png') center/contain no-repeat;
+}
+
+nav ul {
+    margin-left: 120px; /* 将栏目向右移动 */
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    position: relative;
+    margin: 0;
+}
+
+nav ul li > a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul li {
+    position: static;
 }
 
 nav ul li ul {
-    display: none;
-    position: absolute;
+    position: static;
+    display: block;
+    margin-left: 20px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 5px 0;
+    background: transparent;
+    position: static;
 }
 
 nav ul li:hover ul {
     display: block;
+    position: static;
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+nav ul li a {
+    position: static;
+    display: inline-block;
+}
+
+nav ul li ul li a {
+    font-size: 1em;
+    font-weight: normal;
 }
 
 main {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.weight-record {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weight-record img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.weight-record p {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #06729d;
 }
