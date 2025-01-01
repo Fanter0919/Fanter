@@ -42,25 +42,25 @@ nav ul {
 /* 新导航栏样式 */
 nav {
     position: relative;
-    padding-left: 140px; /* 增加左边距 */
     border: 2px solid blue;
     border-radius: 8px;
     padding: 20px;
+    text-align: center;
 }
 
 nav::before {
     content: "";
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto 20px;
     width: 100px;
     height: 100px;
     background: black url('fanter-logo.png') center/contain no-repeat;
 }
 
 nav ul {
-    margin-left: 120px; /* 将栏目向右移动 */
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
 }
 
 nav ul {
