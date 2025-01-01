@@ -1,0 +1,60 @@
+/* 主页面样式 - 蓝白色调 */
+body.main {
+    background-color: #f0f8ff; /* 浅蓝色背景 */
+    color: #00008b; /* 深蓝色文字 */
+}
+
+/* 关于我页面样式 - 红黑色调 */
+body.about {
+    background-color: #000000; /* 黑色背景 */
+    color: #f70a0a; /* 红色文字 */
+}
+
+/* 每一步都算数页面样式 - 蓝白色调 */
+body.steps {
+    background-color: #f0f8ff; /* 浅蓝色背景 */
+    color: #06729d; /* 天蓝色文字 */
+}
+
+/* 电子音乐页面样式 - 红黑色调 */
+body.music {
+    background-color: #000000; /* 黑色背景 */
+    color: #d50808; /* 红色文字 */
+}
+
+/* 电子工程页面样式 - 蓝白色调 */
+body.engineering {
+    background-color: #f0f8ff; /* 浅蓝色背景 */
+    color: #03678e; /* 天蓝色文字 */
+}
+
+/* 通用样式 */
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
